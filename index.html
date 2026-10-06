@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Other libraries go here -->
-
 </head>
 
 <body>
@@ -18,8 +17,57 @@
     <!------------------------------>
     <!-- Your HTML Layout go here -->
     <!------------------------------>
-    <!-- Stuff for body goes here -->
+    <nav class="navbar fixed-bottom bg-primary border-top">
+        <div class="container-fluid justify-content-around">
+            <a class="nav-link text-center active" aria-current="page" href="#">
+                <i class="bi bi-house d-block fs-5"></i><small>Home</small>
+            </a>
+    
+            <a class="nav-link text-center" href="#">
+                <i class="bi bi-search d-block fs-5"></i><small>Search</small>
+            </a>
+    
+            <div class="dropdown">
+                <a class="nav-link text-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-person d-block fs-5"></i><small>Profile</small>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">My Account</a></li>
+                    <li><a class="dropdown-item" href="#">My Hikes</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <a class="navbar-brand" href="#"><img src="./images/logo.jpg" height="36">HikeApp</a>
+    
+    <div class="py-4"></div>
+    <!-- Stuff for body goes here -->
+    <div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+
+        <h1 class="display-5 fw-bold">Welcome to Elmo Hikes!</h1>
+
+        <p class="col-md-8 fs-4">
+        Let's start the adventure now.
+        </p>
+
+        <button class="btn btn-primary btn-lg" type="button">
+        Login / Signup
+        </button>
+
+        <!-- Optional: send the user to login.html when clicked -->
+        <!--
+        <button
+        onclick="window.location.href='login.html'"
+        class="btn btn-primary btn-lg"
+        type="button">
+        Login / Signup
+        </button>
+        -->
+
+    </div>
+    </div>
 
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
