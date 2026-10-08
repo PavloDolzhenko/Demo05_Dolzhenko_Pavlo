@@ -10,3 +10,8 @@
 .ms {
     margin-left: 0.7rem;
 }
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
